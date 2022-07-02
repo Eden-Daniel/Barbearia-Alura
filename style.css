@@ -278,7 +278,7 @@ footer {
     .produtos li {
         display: block;
         margin: 10px auto;
-        width: 65%;
+        width: 75%;
         
     }
 
@@ -287,10 +287,18 @@ footer {
     }
 
     nav {
-        position: static;
+        position: static;        
+    }
+
+    nav a {
+        font-size: 20px;
     }
 
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
-    }    
+    }
+    
+    .enviar {
+        width: 45%;
+    }
 }
