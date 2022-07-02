@@ -4,6 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* cabeçalho */
 header {
     background: #BBBBBB;
     padding: 20px 0px;
@@ -36,9 +37,11 @@ nav a {
 
 nav a:hover {
     color: #c78c19;
-    text-decoration: underline;
+    transition: 120ms;
+    /* text-decoration: underline; */
 }
 
+/* CSS da página de produtos */
 .produtos {
     width: 940px;
     margin: 0px auto;
@@ -51,7 +54,7 @@ nav a:hover {
     width: 30%;
     vertical-align: top;  /*alinhar pela linha de cima*/    
     margin: 0px 1.5%;
-    padding: 30px 20px;
+    padding: 30px 5px;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
@@ -66,11 +69,12 @@ nav a:hover {
 }
 
 .produtos li:hover h2 {
-    font-size: 34px;
+    font-size: 33px;
+    transition: 350ms;
 }
 
 .produtos h2 {
-    font-size: 30px;
+    font-size: 27px;
     font-weight: bold;
 }
 
@@ -84,20 +88,10 @@ nav a:hover {
     margin-top: 10px;
 }
 
-footer {
-    background: url("bg.jpg");
-    text-align: center;
-    padding: 40px 0px;
-}
-
-.copyright {
-    color: #ffffff;
-    font-size: 13px;
-    margin: 20px 0 0;
-}
-
-main {
-    
+/* css da página de contatos */
+.main-contatos {
+    width: 940px;
+    margin: auto
 }
 
 form {
@@ -169,7 +163,7 @@ td, th {
 }
 
 .utensilios {
-    width: 120px;
+    width: 130px;
     float: left;
     margin: 0 20px 20px 0;
 }
@@ -208,6 +202,10 @@ td, th {
     margin: 0px auto;
 }
 
+.mapa-iframe {
+    box-shadow: 5px 5px 5px 0px black;
+}
+
 .beneficios {
     padding: 3em 0;
     background: #888888;
@@ -239,13 +237,13 @@ td, th {
 
 .imagem-beneficios {
     width: 60%;
-    opacity: 1;
+    opacity: 0.9;
     transition: 400ms;
     box-shadow: 10px 10px 10px 0 black;
 }
 
 .imagem-beneficios:hover {
-    opacity: 0.3;
+    opacity: 0.7;
 }
 
 
@@ -254,9 +252,34 @@ td, th {
     margin: 2em auto;
 }
 
+/* css do rodape */
+footer {
+    background: url("bg.jpg");
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
 @media screen and (max-width: 480px) {
-    .caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video {
+    .caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video, .main-contatos, .main-produtos {
         width: auto;
+        padding: 5px;
+    }
+
+    .produtos {
+        width: auto;
+    }
+    
+    .produtos li {
+        display: block;
+        margin: 10px auto;
+        width: 65%;
+        
     }
 
     h1 {
@@ -269,5 +292,5 @@ td, th {
 
     .lista-beneficios, .imagem-beneficios {
         width: 100%;
-    }
+    }    
 }
