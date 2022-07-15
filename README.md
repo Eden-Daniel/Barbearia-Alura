@@ -1,2 +1,2 @@
 # Barbearia Alura
- Projeto desenvolvido durante o curso de HTML5 e CSS3 da alura.
+ Projeto desenvolvido durante os cursos de HTML5 e CSS3 da Alura.
